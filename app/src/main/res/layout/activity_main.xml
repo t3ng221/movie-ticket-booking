@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="ID"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:id="@+id/idEditTextid">
+
+    </EditText>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Your Name"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:id="@+id/nameEditTextid">
+
+    </EditText>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Course Code"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:id="@+id/courseEditTextid">
+
+    </EditText>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Section"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:id="@+id/sectionEditTextid">
+
+    </EditText>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save to database"
+        android:onClick="Saveprocess"
+        android:layout_marginTop="15dp">
+        >
+    </Button>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="2">
+        <EditText
+            android:id="@+id/searchTextiD"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:hint="ID"
+            android:padding="0dp"
+            android:gravity="center"
+            android:background="@color/purple_500"
+            android:textSize="30dp">
+
+        </EditText>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:padding="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="Display"
+            android:onClick="Showthedata">
+        </Button>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:id="@+id/idoutput">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:id="@+id/sectionoutput">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:id="@+id/courseoutput">
+
+    </TextView>
+
+
+
+</LinearLayout>
